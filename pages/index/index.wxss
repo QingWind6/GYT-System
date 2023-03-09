@@ -1,0 +1,109 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #aaa;
+}
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.flex-btn {
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  display: flex; 
+  justify-content: center;
+  align-items: center;  
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.button-new1 {
+  background-color: #2577e4;
+  color: #f0f0f0;
+  width: 180rpx !important;
+  height: 100rpx !important;
+  border-radius: 20rpx;
+  margin-right: 10rpx !important;
+  margin-left: 10rpx !important;
+}
+
+.button-new2 {
+  background-color: #10db76;
+  color: rgb(0, 0, 0);
+  width: 180rpx !important;
+  height: 100rpx !important;
+  border-radius: 20rpx;
+  margin-right: 10rpx !important;
+  margin-left: 10rpx !important;
+}
+
+.button-new3 {
+  background-color: #e2df1d;
+  color: rgb(0, 0, 0);
+  width: 180rpx !important;
+  height: 100rpx !important;
+  border-radius: 20rpx;
+  margin-right: 10rpx !important;
+  margin-left: 10rpx !important;
+}
+
+
+.text-top{
+  margin-top: 3rpx;
+  align-items: center;
+}
+
+
+.flex{
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  font-size: large;
+  margin-top: 30rpx;
+}
+
+
+
+.flex-label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40rpx;
+  height: 40rpx;
+  font-size: 24rpx;
+  font-weight: bold;
+  background-color: #f0f0f0;
+}
+
+.status {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  margin: 0 10px;
+}
+
+.active {
+  background-color: #07c160;
+}
+
+
+
+
