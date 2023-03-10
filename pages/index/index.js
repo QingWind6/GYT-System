@@ -12,7 +12,8 @@ Page({
     canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') && wx.canIUse('open-data.type.userNickName') ,// 如需尝试获取用户信息可改为false
     count:0,
     status : '',
-    receivedData: '' // 用于存储接收到的数据
+    receivedData: '', // 用于存储接收到的数据
+    current: 'homepage'
   },
   // 事件处理函数
   bindViewTap() {
@@ -77,7 +78,19 @@ Page({
   },
   onUnload: function() {
     wx.closeSocket()
+  },
+
+
+  handleChange({detail}){
+    var pageName = detail.key
+    // var pageName_url = detail.item.url
+    var url = "/pages/" + pageName + "/" + pageName
+    console.log(url)
+    wx.navigateTo({
+      url: url
+    })
   }
+
   
 
 })
