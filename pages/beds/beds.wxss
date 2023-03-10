@@ -1,0 +1,40 @@
+.container {
+    padding: 20rpx;
+  }
+  
+  .title {
+    font-size: 36rpx;
+    font-weight: bold;
+    margin-bottom: 20rpx;
+  }
+  
+  .status-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .status-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border: 1rpx solid #d1d1d1;
+    border-radius: 10rpx;
+    width: 30%;
+    height: 200rpx;
+    padding: 20rpx;
+    box-shadow: 0 0 10rpx rgba(0, 0, 0, 0.1);
+  }
+  
+  .status-label {
+    font-size: 32rpx;
+    color: #888;
+  }
+  
+  .status-value {
+    font-size: 64rpx;
+    font-weight: bold;
+    color: #007aff;
+    margin-top: 10rpx;
+  }
+  

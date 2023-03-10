@@ -13,7 +13,7 @@ Page({
     count:0,
     status : '',
     receivedData: '', // 用于存储接收到的数据
-    current: 'homepage'
+    current: 'homepage',
   },
   // 事件处理函数
   bindViewTap() {
@@ -27,6 +27,16 @@ Page({
         canIUseGetUserProfile: true
       })
     }
+  },
+  onLoad: function () {
+    var that = this;
+    wx.getSystemInfo({
+      success: function (res) {
+        that.setData({
+          screenWidth: res.windowWidth,
+        });
+      },
+    });
   },
   getUserProfile(e) {
     // 推荐使用wx.getUserProfile获取用户信息，开发者每次通过该接口获取用户个人信息均需用户确认，开发者妥善保管用户快速填写的头像昵称，避免重复弹窗
@@ -89,9 +99,9 @@ Page({
     wx.navigateTo({
       url: url
     })
-  }
+  },
+  // 获取当前设备的信息
 
-  
 
 })
 

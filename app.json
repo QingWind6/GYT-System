@@ -2,8 +2,11 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/my/my"
+    "pages/my/my",
+    "pages/beds/beds",
+    "pages/home/home"
   ],
+
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
